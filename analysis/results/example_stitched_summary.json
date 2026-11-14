@@ -1,0 +1,10 @@
+{
+  "raw_mean_2003_2011": 2218.8888888888887,
+  "harm_mean_2003_2011": 14070.688983862674,
+  "snpp_mean_2013_2021": 11587.666666666666,
+  "raw_step_ratio_post_over_pre": 5.222283425137706,
+  "harm_step_ratio_post_over_pre": 0.8235322861557295,
+  "aqua_raw_mean_2003_2011": 2218.8888888888887,
+  "aqua_raw_mean_2013_2021": 1814.6666666666667,
+  "note": "2012 omitted (switch year). Annual sums of daytime cell-days, whole AOI; harmonized pre-2012 values are estimated VIIRS-equivalent."
+}

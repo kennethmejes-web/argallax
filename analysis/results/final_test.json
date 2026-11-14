@@ -1,0 +1,75 @@
+{
+  "aoi_notice": "Counts cover a rectangular screening area around the Philippines, not the national land boundary.",
+  "period": [
+    "2020-01",
+    "2021-06"
+  ],
+  "selected_method": "c",
+  "freeze_evidence": {
+    "analysis/results/frozen_method.json": {
+      "blob": "36a48c250ddd704406b8a43fb0c9e3e0d6e6a381",
+      "last_commit": "c1c0694ebae678d54abdd0042eb0068950e8f288 2026-11-14T17:21:51+08:00"
+    },
+    "analysis/experiment.py": {
+      "blob": "0ba7f726119636950f1f0ab052241bb17fd6baff",
+      "last_commit": "c1c0694ebae678d54abdd0042eb0068950e8f288 2026-11-14T17:21:51+08:00"
+    },
+    "analysis/PREREGISTRATION.md": {
+      "blob": "900846d2255eba873ef79437efd61afbe5b400e2",
+      "last_commit": "c1c0694ebae678d54abdd0042eb0068950e8f288 2026-11-14T17:21:51+08:00"
+    }
+  },
+  "scores": {
+    "frozen": {
+      "S1_region_month_WAPE": 0.16418706129836158,
+      "S2_cell_month_WAPE": 0.8902354434342884,
+      "S3_median_spearman": 0.9522089793536983,
+      "S3_by_region": {
+        "North Luzon": 0.9679752066115704,
+        "South Luzon": 0.95193811161698,
+        "Visayas": 0.9524798470904166,
+        "Mindanao": 0.8068186123401468
+      },
+      "bias_sum_Vhat_over_V": 0.9603960449041378,
+      "median_abs_log_ratio": 0.19541470423558976,
+      "n_region_months": 72,
+      "n_cell_months": 4444
+    },
+    "a": {
+      "S1_region_month_WAPE": 0.8459872257706192,
+      "S2_cell_month_WAPE": 0.8569841710635935,
+      "S3_median_spearman": 0.9522089793536983,
+      "S3_by_region": {
+        "North Luzon": 0.9736435408720905,
+        "South Luzon": 0.95193811161698,
+        "Visayas": 0.9524798470904166,
+        "Mindanao": 0.8398764812196405
+      },
+      "bias_sum_Vhat_over_V": 0.15401277422938073,
+      "median_abs_log_ratio": 1.9367277061394437,
+      "n_region_months": 72,
+      "n_cell_months": 4444
+    }
+  },
+  "success_rule": "frozen S1 < (a) S1",
+  "success": true,
+  "S1_difference_frozen_minus_a": -0.6818001644722577,
+  "S1_difference_90pct_bootstrap": [
+    -0.7245961350229493,
+    -0.6038277577825558
+  ],
+  "bootstrap": "month-block, 2000 resamples, seed 20261114",
+  "coverage": {
+    "region_month": {
+      "coverage": 0.6666666666666666,
+      "n": 72,
+      "label": "interval with measured coverage 67%"
+    },
+    "aoi_month": {
+      "coverage": 0.7222222222222222,
+      "n": 18,
+      "label": "80% interval"
+    }
+  },
+  "original_rule_note": "Under the original (pre-Amendment 4) rule the selected method was (a); its scores are the \"a\" entry above."
+}

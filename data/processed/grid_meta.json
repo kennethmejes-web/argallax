@@ -1,0 +1,62 @@
+{
+  "aqua": {
+    "sensor": "Aqua MODIS",
+    "aoi_notice": "Counts cover a rectangular screening area around the Philippines, not the national land boundary.",
+    "cell_deg": 0.25,
+    "detection_bounds_lon_lat": [
+      116.948,
+      4.6574,
+      126.5824,
+      20.8199
+    ],
+    "archive_first_date": "2002-07-05",
+    "archive_last_date": "2026-08-30",
+    "archive_first_full_month": "2002-08",
+    "archive_last_full_month": "2026-07",
+    "all_first_date": "2002-07-05",
+    "all_last_date": "2026-11-14",
+    "all_first_full_month": "2002-08",
+    "all_last_full_month": "2026-10",
+    "nrt_label": "provisional \u2014 source type not verified; may include non-vegetation heat sources"
+  },
+  "snpp": {
+    "sensor": "S-NPP VIIRS",
+    "aoi_notice": "Counts cover a rectangular screening area around the Philippines, not the national land boundary.",
+    "cell_deg": 0.25,
+    "detection_bounds_lon_lat": [
+      116.93593,
+      4.6706,
+      126.60167,
+      20.82937
+    ],
+    "archive_first_date": "2012-01-20",
+    "archive_last_date": "2026-07-31",
+    "archive_first_full_month": "2012-02",
+    "archive_last_full_month": "2026-07",
+    "all_first_date": "2012-01-20",
+    "all_last_date": "2026-11-02",
+    "all_first_full_month": "2012-02",
+    "all_last_full_month": "2026-10",
+    "nrt_label": "provisional \u2014 source type not verified; may include non-vegetation heat sources"
+  },
+  "noaa20": {
+    "sensor": "NOAA-20 VIIRS",
+    "aoi_notice": "Counts cover a rectangular screening area around the Philippines, not the national land boundary.",
+    "cell_deg": 0.25,
+    "detection_bounds_lon_lat": [
+      116.9384,
+      4.70348,
+      126.60058,
+      20.8258
+    ],
+    "archive_first_date": "2018-04-01",
+    "archive_last_date": "2026-07-31",
+    "archive_first_full_month": "2018-04",
+    "archive_last_full_month": "2026-07",
+    "all_first_date": "2018-04-01",
+    "all_last_date": "2026-11-14",
+    "all_first_full_month": "2018-04",
+    "all_last_full_month": "2026-10",
+    "nrt_label": "provisional \u2014 source type not verified; may include non-vegetation heat sources"
+  }
+}

@@ -1,0 +1,2338 @@
+{
+ "title": "ARGALLAX",
+ "question": "Did the burning change, or did the satellite change?",
+ "aoi_notice": "Counts cover a rectangular screening area around the Philippines, not the national land boundary.",
+ "aoi_bounds_lon_lat": [
+  116.9,
+  4.6,
+  126.6,
+  20.8
+ ],
+ "unit": "grid-cell-days: number of 0.25° cell × UTC day combinations with at least one qualifying detection",
+ "unit_short": "cell-days",
+ "cell_deg": 0.25,
+ "regions": [
+  {
+   "name": "North Luzon",
+   "lat_min": 16.0,
+   "lat_max": null
+  },
+  {
+   "name": "South Luzon",
+   "lat_min": 12.5,
+   "lat_max": 16.0
+  },
+  {
+   "name": "Visayas",
+   "lat_min": 9.5,
+   "lat_max": 12.5
+  },
+  {
+   "name": "Mindanao",
+   "lat_min": null,
+   "lat_max": 9.5
+  }
+ ],
+ "regions_note": "Latitude bands of the screening rectangle (by cell centre), not island or administrative boundaries.",
+ "seasons": {
+  "dry": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "rest": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   1
+  ]
+ },
+ "sensors": [
+  {
+   "key": "aqua",
+   "name": "Aqua MODIS (C6.1, 1 km)"
+  },
+  {
+   "key": "snpp",
+   "name": "S-NPP VIIRS (375 m)"
+  },
+  {
+   "key": "noaa20",
+   "name": "NOAA-20 VIIRS (375 m)"
+  }
+ ],
+ "eras": [
+  {
+   "month": "2002-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2002-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2002-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2002-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2002-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2003-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2004-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2005-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2006-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2007-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2008-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2009-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2010-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-02",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-03",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-04",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-05",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-06",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-07",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-08",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-09",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-10",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-11",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2011-12",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-01",
+   "sensor": "aqua",
+   "kind": "harmonized",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2012-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2013-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2014-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2015-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2016-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2017-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2018-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2019-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2020-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2021-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2022-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2023-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2024-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-08",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-09",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-10",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-11",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2025-12",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2026-01",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2026-02",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2026-03",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2026-04",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2026-05",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2026-06",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2026-07",
+   "sensor": "snpp",
+   "kind": "observed",
+   "status": "archive",
+   "complete": true
+  },
+  {
+   "month": "2026-08",
+   "sensor": "noaa20",
+   "kind": "bridged",
+   "status": "provisional",
+   "complete": true
+  },
+  {
+   "month": "2026-09",
+   "sensor": "noaa20",
+   "kind": "bridged",
+   "status": "provisional",
+   "complete": true
+  },
+  {
+   "month": "2026-10",
+   "sensor": "noaa20",
+   "kind": "bridged",
+   "status": "provisional",
+   "complete": true
+  },
+  {
+   "month": "2026-11",
+   "sensor": "noaa20",
+   "kind": "bridged",
+   "status": "provisional",
+   "complete": false
+  }
+ ],
+ "era_summary": [
+  {
+   "from": "2002-08",
+   "to": "2012-01",
+   "sensor": "aqua",
+   "label": "Aqua MODIS, converted to estimated VIIRS-equivalent"
+  },
+  {
+   "from": "2012-02",
+   "to": "2026-07",
+   "sensor": "snpp",
+   "label": "S-NPP VIIRS (reference scale)"
+  },
+  {
+   "from": "2026-08",
+   "to": "2026-11",
+   "sensor": "noaa20",
+   "label": "NOAA-20 VIIRS continuing the S-NPP scale (provisional)"
+  }
+ ],
+ "current_month": {
+  "month": "2026-11",
+  "last_complete_date": "2026-11-13",
+  "elapsed_days": 13,
+  "complete": false,
+  "rule": "A partial month is compared only with days 1–13 of the same month in past years."
+ },
+ "night": "Night detections are shown only from 2012 as observed VIIRS; they are never estimated for the Aqua era and are not part of the main series.",
+ "harmonization": {
+  "method": "(c) ratio per region × season",
+  "ratios": {
+   "Mindanao|dry": 5.844745762711864,
+   "Mindanao|rest": 9.12304250559284,
+   "North Luzon|dry": 5.410071942446043,
+   "North Luzon|rest": 7.593896713615023,
+   "South Luzon|dry": 6.500532481363153,
+   "South Luzon|rest": 5.901430842607313,
+   "Visayas|dry": 6.480895915678524,
+   "Visayas|rest": 8.025
+  },
+  "fit_period": [
+   "2012-02",
+   "2017-12"
+  ],
+  "reference": "S-NPP VIIRS daytime cell-days"
+ },
+ "intervals": {
+  "apply_to": "Aqua-era months only (before Feb 2012), and only to the total of the selected area — never per cell, never summed.",
+  "whole_area": {
+   "q10": -0.17284300578909084,
+   "q90": 0.22103876067983144,
+   "label": "Nominal 80% range; 13 of 18 test months fell inside."
+  },
+  "region": {
+   "q10": -0.2796943233502795,
+   "q90": 0.6351679443684118,
+   "label": "Range covered 67% of test months at regional scale (not 80%)."
+  },
+  "other_box": {
+   "uses": "region",
+   "label": "Approximate range, not validated at this size (the regional range, which covered 67% of test months)."
+  },
+  "formula": "lo = max((x+1)·e^q10 − 1, 0); hi = max((x+1)·e^q90 − 1, 0), with x = estimated total for the selected area",
+  "caveat": "Ranges reflect month-to-month scatter in 2018–2019; they do not include possible long-term change in the Aqua-to-VIIRS relation before 2012."
+ },
+ "small_area_warning": {
+  "threshold_deg": 0.5,
+  "label": "Small area: the harmonized history is less reliable here.",
+  "basis": "Interface warning based on an exploratory diagnostic (2018–2019 data): scaled Aqua was no closer to S-NPP than raw Aqua for single 0.25° cells, and closer for 0.5° blocks and larger. It is not a validated accuracy boundary, and larger areas are not thereby validated.",
+  "diagnostic_block_error": {
+   "0.25deg": {
+    "raw": 0.8568,
+    "harmonized": 0.9579
+   },
+   "0.5deg": {
+    "raw": 0.8486,
+    "harmonized": 0.6731
+   },
+   "1.0deg": {
+    "raw": 0.8458,
+    "harmonized": 0.462
+   },
+   "2.0deg": {
+    "raw": 0.845,
+    "harmonized": 0.3136
+   },
+   "4.0deg": {
+    "raw": 0.8449,
+    "harmonized": 0.2036
+   }
+  }
+ },
+ "validation": {
+  "final_test": {
+   "period": [
+    "2020-01",
+    "2021-06"
+   ],
+   "regional_error_harmonized": 0.164,
+   "regional_error_raw": 0.846,
+   "whole_area_ratio_harmonized": 0.96,
+   "whole_area_ratio_raw": 0.154,
+   "cell_error_harmonized": 0.89,
+   "cell_error_raw": 0.857
+  },
+  "bridge": {
+   "test": [
+    "2022-01",
+    "2026-07"
+   ],
+   "whole_area_ratio_noaa20_over_snpp": 1.0439,
+   "by_year_noaa20_over_snpp": {
+    "2022": 1.063,
+    "2023": 1.07,
+    "2024": 1.011,
+    "2025": 1.026,
+    "2026": 1.065
+   },
+   "exploratory_by_region_season": {
+    "Mindanao|dry": 1.038,
+    "Mindanao|rest": 1.112,
+    "North Luzon|dry": 1.022,
+    "North Luzon|rest": 1.081,
+    "South Luzon|dry": 1.034,
+    "South Luzon|rest": 1.083,
+    "Visayas|dry": 1.013,
+    "Visayas|rest": 1.104,
+    "Mindanao|all": 1.061,
+    "North Luzon|all": 1.032,
+    "South Luzon|all": 1.044,
+    "Visayas|all": 1.033,
+    "AOI|all": 1.044
+   },
+   "exploratory_note": "Exploratory, not preregistered; not corrected for. Its practical effect on single months was not tested."
+  },
+  "drift_after_mid_2021_regional_error": {
+   "2021": 0.3278,
+   "2022": 0.2701,
+   "2023": 0.284,
+   "2024": 0.2254,
+   "2025": 0.2782,
+   "2026": 0.2333
+  }
+ },
+ "labels": {
+  "harmonized_month": "Estimated VIIRS-equivalent (Aqua MODIS converted to the S-NPP VIIRS scale).",
+  "observed_month": "Observed S-NPP VIIRS (reference scale).",
+  "bridged_month": "NOAA-20 VIIRS used as a continuation of S-NPP. Checked for whole-area yearly totals (2022 – Jul 2026), where it read about 4% higher (1–7% by year). In an exploratory breakdown it read 1–6% higher by region and 8–11% higher in June–January; this difference is not corrected and its effect on single months was not tested. Cannot be checked after S-NPP ended (2 Nov 2026).",
+  "provisional_month": "Provisional: near-real-time data, source type not verified; may include non-vegetation heat sources. Science-quality data replaces it after about five months.",
+  "incomplete_month": "Incomplete month: compared with days 1–13 of past years only.",
+  "zero": "No detections in the supplied files, which is not proof of no fire. Cloud, smoke or a missed overpass can also give no detections.",
+  "clouds": "Hotspot counts depend on whether the satellite could see the ground; a cloudy month can show fewer detections without less burning. This is not corrected.",
+  "what_it_measures": "A sensor-harmonized index of detected hotspot activity on the S-NPP VIIRS scale; not fire counts, burned area or emissions.",
+  "drift": "After mid-2021, Aqua drifted from its fixed orbit and Aqua and S-NPP agreed less well (regional monthly difference 23–33%); the cause cannot be separated from S-NPP ageing or real change. The main series uses VIIRS from Feb 2012.",
+  "selection_amendment": "The method-selection rule was changed after the 2018–2019 selection scores were seen and before the final test; under the original rule, no correction would have been selected. Both outcomes are reported.",
+  "not_better_than_one_ratio": "The test does not show that eight ratios are better than one single ratio.",
+  "agreement_scope": "Agreement is with S-NPP VIIRS detections, not with true fire activity.",
+  "pre2012": "Values before 2012 assume the 2012–2017 Aqua-to-VIIRS relation held from 2002; this cannot be tested."
+ },
+ "claims_source": "analysis/SCIENCE_REVIEW.md §6",
+ "credits": {
+  "data": "NASA FIRMS: MODIS Collection 6.1 (Aqua) and VIIRS 375 m (S-NPP, NOAA-20) active fire products; recent months from LANCE FIRMS near-real-time data.",
+  "citation_url": "https://www.earthdata.nasa.gov/data/tools/firms",
+  "ai": "ARGALLAX was created by Kenneth Mejes for Project Sidequest, a solo entry in NASA Space Apps Challenge 2026. Development was AI-assisted, with the project direction, scientific decisions, and final accountability held by the creator. AI tools used: Claude (Anthropic); ChatGPT and Codex (OpenAI).",
+  "licence": "Apache-2.0"
+ },
+ "files": {
+  "cells": "cells.json",
+  "hotspots_by_year": [
+   "2002",
+   "2003",
+   "2004",
+   "2005",
+   "2006",
+   "2007",
+   "2008",
+   "2009",
+   "2010",
+   "2011",
+   "2012",
+   "2013",
+   "2014",
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2019",
+   "2020",
+   "2021",
+   "2022",
+   "2023",
+   "2024",
+   "2025",
+   "2026"
+  ],
+  "hotspots_bytes": {
+   "2002": 32681,
+   "2003": 313120,
+   "2004": 282875,
+   "2005": 362158,
+   "2006": 224108,
+   "2007": 279605,
+   "2008": 130569,
+   "2009": 146665,
+   "2010": 366873,
+   "2011": 116583,
+   "2012": 1311393,
+   "2013": 1696809,
+   "2014": 2220597,
+   "2015": 2935199,
+   "2016": 3088434,
+   "2017": 1238363,
+   "2018": 2674833,
+   "2019": 5172354,
+   "2020": 4406231,
+   "2021": 2217164,
+   "2022": 1646938,
+   "2023": 2680574,
+   "2024": 4703463,
+   "2025": 1511027,
+   "2026": 4051914
+  }
+ }
+}

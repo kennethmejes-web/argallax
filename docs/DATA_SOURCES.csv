@@ -1,0 +1,19 @@
+satellite_name,source_file,data_status,rows,first,last
+Aqua MODIS,fire_archive_M-C61_846423.csv,archive,4674,2019-01-02,2019-12-31
+Aqua MODIS,fire_archive_M-C61_846437.csv,archive,34271,2012-01-20,2021-06-30
+Aqua MODIS,fire_archive_M-C61_846456.csv,archive,40971,2002-07-05,2012-01-18
+Aqua MODIS,fire_archive_M-C61_846536.csv,archive,12531,2021-07-02,2026-08-30
+Aqua MODIS,fire_nrt_M-C61_846536.csv,nrt,146,2026-09-02,2026-11-06
+NOAA-20 VIIRS,fire_archive_J1V-C2_846424.csv,archive,44580,2019-01-01,2019-12-31
+NOAA-20 VIIRS,fire_archive_J1V-C2_846502.csv,archive,115525,2018-04-01,2021-06-30
+NOAA-20 VIIRS,fire_archive_J1V-C2_846537.csv,archive,132337,2021-07-01,2026-07-31
+NOAA-20 VIIRS,fire_nrt_J1V-C2_846537.csv,nrt,2961,2026-08-01,2026-11-06
+S-NPP VIIRS,fire_archive_SV-C2_846425.csv,archive,44311,2019-01-01,2019-12-31
+S-NPP VIIRS,fire_archive_SV-C2_846438.csv,archive,329781,2012-01-20,2021-06-30
+S-NPP VIIRS,fire_archive_SV-C2_846538.csv,archive,129789,2021-07-01,2026-07-31
+S-NPP VIIRS,fire_nrt_SV-C2_846538.csv,nrt,2779,2026-08-01,2026-11-02
+Terra MODIS,fire_archive_M-C61_846423.csv,archive,2422,2019-01-02,2019-12-30
+Terra MODIS,fire_archive_M-C61_846437.csv,archive,18095,2012-01-20,2021-06-30
+Terra MODIS,fire_archive_M-C61_846456.csv,archive,17863,2002-07-05,2012-01-18
+Terra MODIS,fire_archive_M-C61_846536.csv,archive,8701,2021-07-01,2026-08-30
+Terra MODIS,fire_nrt_M-C61_846536.csv,nrt,104,2026-09-02,2026-11-05

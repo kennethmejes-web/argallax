@@ -1,0 +1,188 @@
+{
+  "aoi_notice": "Counts cover a rectangular screening area around the Philippines, not the national land boundary.",
+  "periods": {
+    "fit": [
+      "2012-02",
+      "2017-12"
+    ],
+    "selection": [
+      "2018-01",
+      "2019-12"
+    ],
+    "final_test": [
+      "2020-01",
+      "2021-06"
+    ]
+  },
+  "unit": "daytime archive type-0 grid-cell-days, 0.25 deg; Aqua MODIS conf>=30 vs S-NPP VIIRS conf!=l",
+  "sample_size_check": {
+    "threshold_each_sensor": 200,
+    "fit_counts_by_stratum": {
+      "North Luzon|dry": {
+        "aqua": 2085,
+        "snpp": 11280
+      },
+      "North Luzon|rest": {
+        "aqua": 426,
+        "snpp": 3235
+      },
+      "South Luzon|dry": {
+        "aqua": 1878,
+        "snpp": 12208
+      },
+      "South Luzon|rest": {
+        "aqua": 629,
+        "snpp": 3712
+      },
+      "Visayas|dry": {
+        "aqua": 1518,
+        "snpp": 9838
+      },
+      "Visayas|rest": {
+        "aqua": 360,
+        "snpp": 2889
+      },
+      "Mindanao|dry": {
+        "aqua": 2950,
+        "snpp": 17242
+      },
+      "Mindanao|rest": {
+        "aqua": 894,
+        "snpp": 8156
+      }
+    },
+    "merge_log": [],
+    "passed": true,
+    "strata_used": [
+      "Mindanao|dry",
+      "Mindanao|rest",
+      "North Luzon|dry",
+      "North Luzon|rest",
+      "South Luzon|dry",
+      "South Luzon|rest",
+      "Visayas|dry",
+      "Visayas|rest"
+    ]
+  },
+  "parameters": {
+    "a": {},
+    "b": {
+      "r": 6.383612662942272
+    },
+    "c": {
+      "r_strata": {
+        "Mindanao|dry": 5.844745762711864,
+        "Mindanao|rest": 9.12304250559284,
+        "North Luzon|dry": 5.410071942446043,
+        "North Luzon|rest": 7.593896713615023,
+        "South Luzon|dry": 6.500532481363153,
+        "South Luzon|rest": 5.901430842607313,
+        "Visayas|dry": 6.480895915678524,
+        "Visayas|rest": 8.025
+      }
+    }
+  },
+  "selection_scores_2018_2019": {
+    "a": {
+      "S1_region_month_WAPE": 0.8446840396303389,
+      "S2_cell_month_WAPE": 0.8567563067188411,
+      "S3_median_spearman": 0.9753822411827822,
+      "S3_by_region": {
+        "North Luzon": 0.9720827102429023,
+        "South Luzon": 0.9799747147787542,
+        "Visayas": 0.9464494082208019,
+        "Mindanao": 0.978681772122662
+      },
+      "bias_sum_Vhat_over_V": 0.15531596036966114,
+      "median_abs_log_ratio": 1.8761770849831447,
+      "n_region_months": 96,
+      "n_cell_months": 6204
+    },
+    "b": {
+      "S1_region_month_WAPE": 0.18587260250428775,
+      "S2_cell_month_WAPE": 0.940760386157506,
+      "S3_median_spearman": 0.9753822411827822,
+      "S3_by_region": {
+        "North Luzon": 0.9720827102429023,
+        "South Luzon": 0.9799747147787542,
+        "Visayas": 0.9464494082208019,
+        "Mindanao": 0.978681772122662
+      },
+      "bias_sum_Vhat_over_V": 0.991476931372825,
+      "median_abs_log_ratio": 0.21490129349037163,
+      "n_region_months": 96,
+      "n_cell_months": 6204
+    },
+    "c": {
+      "S1_region_month_WAPE": 0.15968782425093667,
+      "S2_cell_month_WAPE": 0.9578961386610806,
+      "S3_median_spearman": 0.9636354495191628,
+      "S3_by_region": {
+        "North Luzon": 0.9720827102429023,
+        "South Luzon": 0.9799747147787542,
+        "Visayas": 0.9455748880930859,
+        "Mindanao": 0.9551881887954233
+      },
+      "bias_sum_Vhat_over_V": 1.0002482719944217,
+      "median_abs_log_ratio": 0.19014955517120366,
+      "n_region_months": 96,
+      "n_cell_months": 6204
+    }
+  },
+  "selection_rule_original": "start (a); a more complex method replaces the current choice only if S1 drops >=10% relative, S2 not raised, S3 not lowered by >0.05",
+  "selection_outcome_original_rule": {
+    "trail": [
+      "b vs a: does not replace",
+      "c vs a: does not replace"
+    ],
+    "selected": "a"
+  },
+  "selection_rule_amended": "Amendment 4 (made after the 2018-2019 scores were seen, before any 2020+ data was read): as original, but S2 is reported and no longer a veto",
+  "selection_trail": [
+    "b vs a: replaces",
+    "c vs b: replaces"
+  ],
+  "selected_method": "c",
+  "selected_parameters": {
+    "r_strata": {
+      "Mindanao|dry": 5.844745762711864,
+      "Mindanao|rest": 9.12304250559284,
+      "North Luzon|dry": 5.410071942446043,
+      "North Luzon|rest": 7.593896713615023,
+      "South Luzon|dry": 6.500532481363153,
+      "South Luzon|rest": 5.901430842607313,
+      "Visayas|dry": 6.480895915678524,
+      "Visayas|rest": 8.025
+    }
+  },
+  "strata_mapping": {
+    "North Luzon|dry": "North Luzon|dry",
+    "North Luzon|rest": "North Luzon|rest",
+    "South Luzon|dry": "South Luzon|dry",
+    "South Luzon|rest": "South Luzon|rest",
+    "Visayas|dry": "Visayas|dry",
+    "Visayas|rest": "Visayas|rest",
+    "Mindanao|dry": "Mindanao|dry",
+    "Mindanao|rest": "Mindanao|rest"
+  },
+  "region_definition": "cell-centre latitude: North Luzon >=16; South Luzon 12.5-<16; Visayas 9.5-<12.5; Mindanao <9.5. Dry season Feb-May; rest Jun-Jan.",
+  "spatial_limitation": "Exploratory diagnostic (analysis/results/diagnostic_s2.json): at single 0.25 deg cell-months the correction does not beat raw Aqua on absolute error; it helps at 0.5 deg and coarser in 2018-2019. No size threshold is validated; claims are limited to aggregate comparability.",
+  "interval_quantiles": {
+    "region_month": {
+      "q10": -0.2796943233502795,
+      "q90": 0.6351679443684118,
+      "n": 96
+    },
+    "aoi_month": {
+      "q10": -0.17284300578909084,
+      "q90": 0.22103876067983144,
+      "n": 24
+    }
+  },
+  "method_d": "not run: no committed addendum specifying it",
+  "final_test_isolation": {
+    "fit_selection_diagnostic_loaded_months_after_2019_12": false,
+    "final_test_outcome_computed_or_inspected": false,
+    "note": "All years, including 2020-2021, were processed by ingestion and gridding (Steps 4, 6a, 6b) and appear in Step 4 descriptive raw detection counts (docs/DATA_MONTHLY.csv, docs/DATA_ANNUAL.csv); not used in fitting, diagnostics, selection or tuning."
+  }
+}

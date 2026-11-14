@@ -1,0 +1,163 @@
+{
+  "aoi_notice": "Counts cover a rectangular screening area around the Philippines, not the national land boundary.",
+  "method": "c",
+  "drift_check": {
+    "period": [
+      "2021-07",
+      "2026-07"
+    ],
+    "per_year": {
+      "2021": {
+        "S1": 0.3278,
+        "bias": 1.0229,
+        "n_region_months": 24,
+        "months": "2021-07\u20132021-12"
+      },
+      "2022": {
+        "S1": 0.2701,
+        "bias": 0.8833,
+        "n_region_months": 48,
+        "months": "2022-01\u20132022-12"
+      },
+      "2023": {
+        "S1": 0.284,
+        "bias": 0.9934,
+        "n_region_months": 48,
+        "months": "2023-01\u20132023-12"
+      },
+      "2024": {
+        "S1": 0.2254,
+        "bias": 0.9841,
+        "n_region_months": 48,
+        "months": "2024-01\u20132024-12"
+      },
+      "2025": {
+        "S1": 0.2782,
+        "bias": 0.9419,
+        "n_region_months": 48,
+        "months": "2025-01\u20132025-12"
+      },
+      "2026": {
+        "S1": 0.2333,
+        "bias": 0.9952,
+        "n_region_months": 28,
+        "months": "2026-01\u20132026-07"
+      }
+    },
+    "note": "Descriptive only. Aqua orbit drift, S-NPP ageing and real change are confounded."
+  },
+  "bridge": {
+    "fit": [
+      "2018-04",
+      "2021-12"
+    ],
+    "test": [
+      "2022-01",
+      "2026-07"
+    ],
+    "rho_fitted": 0.9744,
+    "rho_used": 1.0,
+    "primary": {
+      "bias_sum_Shat_over_V": 1.0439,
+      "criterion_i_bias_within_5pct": true,
+      "S1": 0.0881,
+      "S2": 0.4757,
+      "per_year": {
+        "2022": {
+          "sum_V_snpp": 5507,
+          "sum_N_noaa20": 5855,
+          "V_over_Shat": 0.9406,
+          "V_over_N": 0.9406,
+          "months": "2022-01\u20132022-12",
+          "status": "pass"
+        },
+        "2023": {
+          "sum_V_snpp": 7804,
+          "sum_N_noaa20": 8353,
+          "V_over_Shat": 0.9343,
+          "V_over_N": 0.9343,
+          "months": "2023-01\u20132023-12",
+          "status": "pass"
+        },
+        "2024": {
+          "sum_V_snpp": 12304,
+          "sum_N_noaa20": 12435,
+          "V_over_Shat": 0.9895,
+          "V_over_N": 0.9895,
+          "months": "2024-01\u20132024-12",
+          "status": "pass"
+        },
+        "2025": {
+          "sum_V_snpp": 5216,
+          "sum_N_noaa20": 5353,
+          "V_over_Shat": 0.9744,
+          "V_over_N": 0.9744,
+          "months": "2025-01\u20132025-12",
+          "status": "pass"
+        },
+        "2026": {
+          "sum_V_snpp": 9032,
+          "sum_N_noaa20": 9615,
+          "V_over_Shat": 0.9394,
+          "V_over_N": 0.9394,
+          "months": "2026-01\u20132026-07",
+          "status": "pass"
+        }
+      },
+      "passed": true,
+      "label": "validated"
+    }
+  },
+  "sensitivity_outage_screen": {
+    "label": "sensitivity: outage screen",
+    "note": "Can only remove months where sensors disagree, so it can only favour agreement. Not primary.",
+    "final_test": {
+      "months_dropped": [
+        "2020-06",
+        "2020-07",
+        "2020-08",
+        "2020-09",
+        "2020-10",
+        "2020-11"
+      ],
+      "S1_frozen": 0.1395,
+      "S1_a": 0.8423
+    },
+    "drift_check": {
+      "months_dropped": [
+        "2021-07",
+        "2021-10",
+        "2022-04",
+        "2022-07",
+        "2022-08",
+        "2022-10",
+        "2023-07",
+        "2024-05",
+        "2024-06",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-12",
+        "2025-08",
+        "2025-09",
+        "2025-12",
+        "2026-07"
+      ],
+      "S1_all_years": 0.2369,
+      "bias": 0.9907
+    },
+    "bridge": {
+      "months_dropped": [
+        "2022-07",
+        "2022-08",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2025-08",
+        "2026-07"
+      ],
+      "passed": true,
+      "bias": 1.0411
+    }
+  }
+}

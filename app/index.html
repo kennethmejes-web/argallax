@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARGALLAX — a harmonized hotspot calendar for the Philippines</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Monthly satellite hotspot calendar for the Philippines, 2002–2026, with MODIS and VIIRS records put on one tested scale." />
+</head>
+<body>
+  <a class="skip" href="#calendar-section">Skip to the calendar</a>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="kicker">ARGALLAX · satellite hotspot calendar · Philippines, 2002–2026</p>
+      <h1>Did the burning change, or did the satellite change?</h1>
+      <p class="lede">NASA has watched fires from space with two generations of instruments. The newer one (VIIRS, from 2012) records hotspots on about six times as many place-days as the older one (MODIS). ARGALLAX puts the whole record on one tested scale, so a change in the satellite is not mistaken for a change on the ground.</p>
+      <p class="notice" id="aoi-notice"></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" id="area-section" aria-labelledby="area-h">
+      <h2 id="area-h"><span class="num">1</span> Choose an area and years</h2>
+      <div class="area-grid">
+        <div class="map-wrap">
+          <div id="map" role="application" aria-label="Map of the screening area. Use the Draw a box button, then drag on the map."></div>
+          <div class="map-tools">
+            <button id="draw-btn" type="button" aria-pressed="false">Draw a box</button>
+            <span id="draw-hint" class="hint">Drag on the map to draw. Boxes snap to the 0.25° grid.</span>
+          </div>
+        </div>
+        <div class="controls">
+          <fieldset>
+            <legend>Quick areas</legend>
+            <div class="presets" id="presets"></div>
+          </fieldset>
+          <fieldset>
+            <legend>Or type a box (degrees)</legend>
+            <div class="latlon">
+              <label>South <input id="in-s" type="number" step="0.25" inputmode="decimal" /></label>
+              <label>North <input id="in-n" type="number" step="0.25" inputmode="decimal" /></label>
+              <label>West <input id="in-w" type="number" step="0.25" inputmode="decimal" /></label>
+              <label>East <input id="in-e" type="number" step="0.25" inputmode="decimal" /></label>
+            </div>
+            <button id="apply-box" type="button">Use this box</button>
+          </fieldset>
+          <fieldset>
+            <legend>Years shown</legend>
+            <div class="years">
+              <label>From <select id="y0"></select></label>
+              <label>To <select id="y1"></select></label>
+            </div>
+          </fieldset>
+          <div id="selection-summary" class="selection" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="calendar-section" aria-labelledby="cal-h">
+      <div class="section-head">
+        <h2 id="cal-h"><span class="num">2</span> Hotspot calendar</h2>
+        <div class="toggle" role="group" aria-label="Calendar colouring">
+          <button type="button" id="view-counts" aria-pressed="true">Counts</button>
+          <button type="button" id="view-anom" aria-pressed="false">Compared with usual</button>
+        </div>
+      </div>
+      <p class="explain" id="cal-explain"></p>
+      <div id="cal-summary" class="summary" aria-live="polite"></div>
+      <div id="calendar" class="calendar"></div>
+      <div id="cal-legend" class="legend"></div>
+      <div id="provenance" class="provenance" aria-label="Which satellite recorded each period"></div>
+      <div id="tooltip" class="tooltip" role="status" hidden></div>
+    </section>
+
+    <section class="wrap" id="month-section" aria-labelledby="month-h">
+      <h2 id="month-h"><span class="num">3</span> This month against history</h2>
+      <div class="month-grid">
+        <div id="month-text"></div>
+        <div id="month-chart" class="chart"></div>
+      </div>
+    </section>
+
+    <section class="wrap" id="switch-section" aria-labelledby="switch-h">
+      <h2 id="switch-h"><span class="num">4</span> The satellite switch</h2>
+      <p class="explain">A record that simply joins the older satellite to the newer one jumps in 2012. If detections had really risen, the older satellite, which kept flying, would have recorded more too.</p>
+      <div id="switch-chart" class="chart"></div>
+      <p id="switch-text" class="finding"></p>
+    </section>
+
+    <section class="wrap" id="trust-section" aria-labelledby="trust-h">
+      <h2 id="trust-h"><span class="num">5</span> Why you can trust this — and where you shouldn't</h2>
+      <div id="trust" class="trust"></div>
+    </section>
+
+    <section class="wrap" id="download-section" aria-labelledby="dl-h">
+      <h2 id="dl-h"><span class="num">6</span> Download</h2>
+      <div class="downloads">
+        <div>
+          <button type="button" id="dl-calendar">Calendar values (CSV)</button>
+          <p class="hint">Monthly values for your area, with satellite, status, ranges and flags.</p>
+        </div>
+        <div>
+          <button type="button" id="dl-hotspots">Hotspot detections (CSV)</button>
+          <p class="hint" id="dl-hot-hint"></p>
+        </div>
+      </div>
+      <p id="dl-status" class="hint" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="wrap footer" id="footer"></footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

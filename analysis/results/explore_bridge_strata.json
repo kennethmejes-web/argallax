@@ -1,0 +1,161 @@
+{
+  "label": "exploratory, not preregistered",
+  "aoi_notice": "Counts cover a rectangular screening area around the Philippines, not the national land boundary.",
+  "ratio": "sum NOAA-20 / sum S-NPP daytime cell-days",
+  "fit_2018-04_2021-12": {
+    "Mindanao|dry": {
+      "noaa20": 10005,
+      "snpp": 9499,
+      "N_over_V": 1.053
+    },
+    "Mindanao|rest": {
+      "noaa20": 5280,
+      "snpp": 4863,
+      "N_over_V": 1.086
+    },
+    "North Luzon|dry": {
+      "noaa20": 7088,
+      "snpp": 6977,
+      "N_over_V": 1.016
+    },
+    "North Luzon|rest": {
+      "noaa20": 1922,
+      "snpp": 1970,
+      "N_over_V": 0.976
+    },
+    "South Luzon|dry": {
+      "noaa20": 7218,
+      "snpp": 7117,
+      "N_over_V": 1.014
+    },
+    "South Luzon|rest": {
+      "noaa20": 1927,
+      "snpp": 1965,
+      "N_over_V": 0.981
+    },
+    "Visayas|dry": {
+      "noaa20": 5814,
+      "snpp": 5864,
+      "N_over_V": 0.991
+    },
+    "Visayas|rest": {
+      "noaa20": 1874,
+      "snpp": 1819,
+      "N_over_V": 1.03
+    },
+    "Mindanao|all": {
+      "noaa20": 15285,
+      "snpp": 14362,
+      "N_over_V": 1.064
+    },
+    "North Luzon|all": {
+      "noaa20": 9010,
+      "snpp": 8947,
+      "N_over_V": 1.007
+    },
+    "South Luzon|all": {
+      "noaa20": 9145,
+      "snpp": 9082,
+      "N_over_V": 1.007
+    },
+    "Visayas|all": {
+      "noaa20": 7688,
+      "snpp": 7683,
+      "N_over_V": 1.001
+    },
+    "AOI|all": {
+      "noaa20": 41128,
+      "snpp": 40074,
+      "N_over_V": 1.026
+    }
+  },
+  "test_by_region_year": {
+    "Mindanao|2022": 1.107,
+    "Mindanao|2023": 1.083,
+    "Mindanao|2024": 1.03,
+    "Mindanao|2025": 1.037,
+    "Mindanao|2026": 1.079,
+    "North Luzon|2022": 0.994,
+    "North Luzon|2023": 1.068,
+    "North Luzon|2024": 0.993,
+    "North Luzon|2025": 1.03,
+    "North Luzon|2026": 1.067,
+    "South Luzon|2022": 1.076,
+    "South Luzon|2023": 1.06,
+    "South Luzon|2024": 0.986,
+    "South Luzon|2025": 1.039,
+    "South Luzon|2026": 1.082,
+    "Visayas|2022": 1.072,
+    "Visayas|2023": 1.07,
+    "Visayas|2024": 1.026,
+    "Visayas|2025": 0.991,
+    "Visayas|2026": 1.018
+  },
+  "test_2022-01_2026-07": {
+    "Mindanao|dry": {
+      "noaa20": 8460,
+      "snpp": 8147,
+      "N_over_V": 1.038
+    },
+    "Mindanao|rest": {
+      "noaa20": 4022,
+      "snpp": 3618,
+      "N_over_V": 1.112
+    },
+    "North Luzon|dry": {
+      "noaa20": 8444,
+      "snpp": 8261,
+      "N_over_V": 1.022
+    },
+    "North Luzon|rest": {
+      "noaa20": 1747,
+      "snpp": 1616,
+      "N_over_V": 1.081
+    },
+    "South Luzon|dry": {
+      "noaa20": 8632,
+      "snpp": 8347,
+      "N_over_V": 1.034
+    },
+    "South Luzon|rest": {
+      "noaa20": 2274,
+      "snpp": 2100,
+      "N_over_V": 1.083
+    },
+    "Visayas|dry": {
+      "noaa20": 6126,
+      "snpp": 6048,
+      "N_over_V": 1.013
+    },
+    "Visayas|rest": {
+      "noaa20": 1906,
+      "snpp": 1726,
+      "N_over_V": 1.104
+    },
+    "Mindanao|all": {
+      "noaa20": 12482,
+      "snpp": 11765,
+      "N_over_V": 1.061
+    },
+    "North Luzon|all": {
+      "noaa20": 10191,
+      "snpp": 9877,
+      "N_over_V": 1.032
+    },
+    "South Luzon|all": {
+      "noaa20": 10906,
+      "snpp": 10447,
+      "N_over_V": 1.044
+    },
+    "Visayas|all": {
+      "noaa20": 8032,
+      "snpp": 7774,
+      "N_over_V": 1.033
+    },
+    "AOI|all": {
+      "noaa20": 41611,
+      "snpp": 39863,
+      "N_over_V": 1.044
+    }
+  }
+}
