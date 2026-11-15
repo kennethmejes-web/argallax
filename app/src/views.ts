@@ -301,7 +301,7 @@ export function renderCalendar() {
   $('cal-summary').innerHTML = summaryHtml() + (state.measure === 'counts' ? ' <span class="fine">Choose “Compared with usual” to see which months they are.</span>' : '');
   $('cal-explain').textContent = state.measure === 'counts'
     ? 'Each square is one month. Brighter means hotspots were detected on more grid-cell-days (a 0.25° square on one day with at least one detection). All years are on the S-NPP VIIRS scale. Select a month to update the map and the single reading above.'
-    : 'Each square compares a month with the median of the same month in other years: orange is more than usual, purple less, white typical. Select a month to update the map and the single reading above.';
+    : 'Each square compares a month with the median of the same month in other years: purple is more than usual, orange less, white typical. Select a month to update the map and the single reading above.';
   $('measure-counts').setAttribute('aria-pressed', String(state.measure === 'counts'));
   $('measure-anom').setAttribute('aria-pressed', String(state.measure === 'anom'));
 }

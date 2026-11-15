@@ -389,7 +389,8 @@ select { background:var(--paper-2); }
 .drawer { scroll-margin-top:160px; margin-top:56px; padding-top:32px; border-top:1px solid var(--rule); }
 .drawer-head { display:flex; justify-content:space-between; align-items:end; gap:20px; flex-wrap:wrap; margin-bottom:14px; }
 .drawer-head h2 { font-size:30px; font-weight:300; }
-.drawer .calendar-controls { margin:0; }
+.drawer .calendar-controls { margin:0; align-items:center; }
+.drawer .calendar-controls .years { margin:0; }
 .seg { display:inline-flex; border:1px solid var(--rule); border-radius:8px; padding:3px; gap:2px; }
 .seg button { border:0; min-height:36px; padding:4px 14px; font-size:15px; color:var(--ink-2); }
 .seg button[aria-pressed='true'] { background:var(--ink); color:var(--paper); }
