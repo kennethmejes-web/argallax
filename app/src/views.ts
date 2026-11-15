@@ -301,7 +301,7 @@ export function renderCalendar() {
   $('cal-summary').innerHTML = summaryHtml() + (state.measure === 'counts' ? ' <span class="fine">Choose “Compared with usual” to see which months they are.</span>' : '');
   $('cal-explain').textContent = state.measure === 'counts'
     ? 'Each square is one month. Brighter means hotspots were detected on more grid-cell-days (a 0.25° square on one day with at least one detection). All years are on the S-NPP VIIRS scale. Select a month to update the map and the single reading above.'
-    : 'Each square compares a month with the median of the same month in other years: purple is more than usual, orange less, white typical. Select a month to update the map and the single reading above.';
+    : 'Each square compares a month with the median of the same month in other years: orange means more hotspot detections than usual for that month, purple fewer, white about typical. Select a month to update the map and the single reading above.';
   $('measure-counts').setAttribute('aria-pressed', String(state.measure === 'counts'));
   $('measure-anom').setAttribute('aria-pressed', String(state.measure === 'anom'));
 }
@@ -337,8 +337,8 @@ function renderLegend(max: number) {
     items.push(`<span class="item">${swatch(`<defs><linearGradient id="lg">${stops}</linearGradient></defs><rect width="120" height="12" fill="url(#lg)" stroke="${RULE}"/>`, 120, 12)} <span class="tab">0 → ${fmt(max)}</span> cell-days per month</span>`);
     items.push(`<span class="item">${swatch(`<rect width="22" height="14" fill="${PAPER}" stroke="${RULE}"/><circle cx="11" cy="7" r="1.6" fill="${INK3}"/>`)} no detections (not proof of no fire)</span>`);
   } else {
-    const stops = Array.from({ length: 11 }, (_, k) => `<stop offset="${k * 10}%" stop-color="${interpolatePuOr(1 - k / 10)}"/>`).join('');
-    items.push(`<span class="item">${swatch(`<defs><linearGradient id="lg2">${stops}</linearGradient></defs><rect width="120" height="12" fill="url(#lg2)" stroke="${RULE}"/>`, 120, 12)} below median · typical · above median</span>`);
+    const stops = Array.from({ length: 11 }, (_, k) => `<stop offset="${k * 10}%" stop-color="${interpolatePuOr(k / 10)}"/>`).join('');
+    items.push(`<span class="item">${swatch(`<defs><linearGradient id="lg2">${stops}</linearGradient></defs><rect width="120" height="12" fill="url(#lg2)" stroke="${RULE}"/>`, 120, 12)} fewer than usual · typical · more than usual</span>`);
   }
   items.push(`<span class="item">${swatch(`<rect width="22" height="14" fill="${PAPER2}"/><rect width="3" height="14" fill="var(--aqua)"/>`)} estimated from Aqua MODIS (before Feb 2012): solid bar on the left</span>`);
   items.push(`<span class="item">${swatch(`<rect width="22" height="14" fill="${PAPER2}"/><line x1="1" x2="21" y1="11" y2="11" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="3 3"/>`)} provisional (near-real-time): dotted line along the bottom</span>`);

@@ -15,7 +15,7 @@ export const seq = (v: number, max: number) => {
   const t = Math.sqrt(Math.min(v / Math.max(max, 1), 1));
   return state.view === 'living' ? interpolateInferno(0.36 + 0.62 * t) : interpolateInferno(0.96 - 0.8 * t);
 };
-export const div = (v: number, med: number) => interpolatePuOr(0.5 - Math.max(-2, Math.min(2, Math.log2((v + 1) / (med + 1)))) / 4);
+export const div = (v: number, med: number) => interpolatePuOr(0.5 + Math.max(-2, Math.min(2, Math.log2((v + 1) / (med + 1)))) / 4);
 export const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
 
 export type View = 'living' | 'classic';
