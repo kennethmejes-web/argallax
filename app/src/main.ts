@@ -94,7 +94,7 @@ function renderCalendar() {
       if (p.era.kind === 'harmonized') parts.push(`<rect x="${x + 1}" y="${yy + 1}" width="${cw - 2}" height="${rh - 2}" fill="url(#h-est)" pointer-events="none"/>`);
       if (p.provisional) parts.push(`<rect x="${x + 1}" y="${yy + 1}" width="${cw - 2}" height="${rh - 2}" fill="url(#h-prov)" pointer-events="none"/>`);
       if (!p.era.complete) parts.push(`<rect x="${x + 1.5}" y="${yy + 1.5}" width="${cw - 3}" height="${rh - 3}" fill="none" stroke="${INK}" stroke-width="1.2" stroke-dasharray="3 2" pointer-events="none"/>`);
-      if (p.flag === 'above' || p.flag === 'below') {
+      if (!p.provisional && (p.flag === 'above' || p.flag === 'below')) {
         const tx = x + cw - 4, ty = yy + 3, s = Math.min(7, rh / 2.5);
         parts.push(p.flag === 'above'
           ? `<path d="M${tx - s} ${ty + s} L${tx} ${ty + s} L${tx - s / 2} ${ty} Z" fill="${INK}" stroke="${PAPER}" stroke-width="0.8" pointer-events="none"/>`
@@ -144,7 +144,7 @@ function showTip(i: number, el: Element) {
   const p = state.pts[i], tip = $('tooltip'), sec = $('calendar-section');
   const v = shown(p);
   let ref = '';
-  if (p.ref) ref = `<br>Historical reference range: <span class="tab">${fmt(p.ref.p10)}–${fmt(p.ref.p90)}</span>${p.flag !== 'within' ? ` · <strong style="display:inline">${p.flag === 'above' ? 'above' : 'below'}</strong>` : ' · within'}`;
+  if (p.ref) ref = `<br>Historical reference range: <span class="tab">${fmt(p.ref.p10)}–${fmt(p.ref.p90)}</span>${p.flag !== 'within' ? ` · <strong style="display:inline">${p.flag === 'above' ? 'above' : 'below'}</strong>${p.provisional ? ' (provisional, not confirmed)' : ''}` : ' · within'}`;
   tip.innerHTML = `<strong>${monthLabel(p)}</strong><span class="tab">${fmt(v)}</span> cell-days<br>${kindText(p)}${p.provisional ? '<br><em>Provisional</em>' : ''}${ref}`;
   tip.hidden = false;
   const r = el.getBoundingClientRect(), s = sec.getBoundingClientRect();
@@ -167,7 +167,7 @@ function renderLegend(max: number) {
   }
   items.push(`<span class="item">${swatch(`<rect width="22" height="14" fill="${PAPER2}"/><rect width="22" height="14" fill="url(#h-est)"/>`)} estimated from Aqua MODIS (before Feb 2012)</span>`);
   items.push(`<span class="item">${swatch(`<rect width="22" height="14" fill="${PAPER2}"/><rect width="22" height="14" fill="url(#h-prov)"/>`)} provisional (near-real-time)</span>`);
-  items.push(`<span class="item">${swatch(`<path d="M5 12 L15 12 L10 3 Z" fill="${INK}"/>`)} above / ${swatch(`<path d="M5 3 L15 3 L10 12 Z" fill="${PAPER}" stroke="${INK}"/>`)} below the historical reference range</span>`);
+  items.push(`<span class="item">${swatch(`<path d="M5 12 L15 12 L10 3 Z" fill="${INK}"/>`)} above / ${swatch(`<path d="M5 3 L15 3 L10 12 Z" fill="${PAPER}" stroke="${INK}"/>`)} below the historical reference range (confirmed months only)</span>`);
   items.push(`<span class="item">${swatch(`<rect x="1" y="1" width="20" height="12" fill="none" stroke="${INK}" stroke-dasharray="3 2"/>`)} incomplete month</span>`);
   $('cal-legend').innerHTML = items.join('');
 }
@@ -195,10 +195,11 @@ $('provenance').innerHTML = `<p class="hint" style="margin:0 0 4px ${left}px">Wh
 function renderCalSummary() {
   const act = activeMonths(state.pts, state.y0, state.y1).filter((a) => a.median > 0);
   const inR = state.pts.filter((p) => p.year >= state.y0 && p.year <= state.y1);
-  const above = inR.filter((p) => p.flag === 'above').length, below = inR.filter((p) => p.flag === 'below').length;
+  const conf = inR.filter((p) => !p.provisional), above = conf.filter((p) => p.flag === 'above').length, below = conf.filter((p) => p.flag === 'below').length;
+  const provOut = inR.filter((p) => p.provisional && (p.flag === 'above' || p.flag === 'below')).length;
   const top = act.slice(0, 3).map((a) => `<strong>${MONTHS_LONG[a.cal - 1]}</strong> (<span class="tab">${fmt(a.median)}</span>)`).join(', ');
   $('cal-summary').innerHTML = act.length
-    ? `<p>In this area the most active months are usually ${top}: typical cell-days per month, ${state.y0}–${state.y1}. ${above} months are above and ${below} below their historical reference range. Select any month to compare it with history.</p>`
+    ? `<p>In this area the most active months are usually ${top}: typical cell-days per month, ${state.y0}–${state.y1}. ${above} confirmed months are above and ${below} below their historical reference range.${provOut ? ` ${provOut} provisional month${provOut > 1 ? 's are' : ' is'} currently outside the range and not counted.` : ''} Select any month to compare it with history.</p>`
     : `<p>${esc(atlas.meta.labels.zero)}</p>`;
   $('cal-explain').textContent = state.view === 'counts'
     ? 'Each square is one month. Darker means hotspots were detected on more grid-cell-days (a 0.25° square on one day with at least one detection). All years are on the S-NPP VIIRS scale.'
@@ -214,6 +215,7 @@ function renderMonth() {
   if (partial) tags.push('<span class="tag prov">incomplete</span>');
   let verdict = 'Not enough history to compare.';
   if (p.ref) verdict = p.flag === 'above' ? 'Above the historical reference range' : p.flag === 'below' ? 'Below the historical reference range' : 'Within the historical reference range';
+  if (p.ref && p.provisional && p.flag !== 'within') verdict = `Currently ${p.flag} the historical reference range, but provisional: not a confirmed unusual month`;
   const rows: string[] = [];
   if (p.ref) {
     rows.push(`<tr><th>Historical reference range<br><span class="hint">10th–90th percentile of ${MONTHS_LONG[p.cal - 1]} in ${p.ref.n} other years${p.ref.early ? `, days 1–${atlas.meta.current_month.elapsed_days} only` : ''}. Descriptive: not a prediction or a significance test.</span></th><td>${fmt(p.ref.p10)}–${fmt(p.ref.p90)}<br><span class="hint">median ${fmt(p.ref.p50)}</span></td></tr>`);
@@ -359,7 +361,7 @@ function downloadCalendar() {
   for (const p of rows) {
     lines.push([p.month, atlas.meta.sensors.find((s) => s.key === p.era.sensor)!.name, p.era.kind, p.era.status, p.era.complete, shown(p).toFixed(2), p.aquaRaw,
       p.conv ? p.conv.lo.toFixed(2) : '', p.conv ? p.conv.hi.toFixed(2) : '', p.ref ? p.ref.p10.toFixed(2) : '', p.ref ? p.ref.p50.toFixed(2) : '', p.ref ? p.ref.p90.toFixed(2) : '',
-      p.ref ? p.ref.n : '', p.ref?.early ? atlas.meta.current_month.elapsed_days : '', p.flag ?? ''].map((x) => `"${String(x).replace(/"/g, '""')}"`).join(','));
+      p.ref ? p.ref.n : '', p.ref?.early ? atlas.meta.current_month.elapsed_days : '', p.flag && p.provisional && p.flag !== 'within' ? `${p.flag} (provisional, not confirmed)` : (p.flag ?? '')].map((x) => `"${String(x).replace(/"/g, '""')}"`).join(','));
   }
   download(`argallax_calendar_${boxTag()}_${state.y0}-${state.y1}.csv`, lines.join('\n') + '\n');
 }

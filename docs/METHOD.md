@@ -19,7 +19,7 @@ The ratios were fitted on 2012–2017, the method was chosen on 2018–2019, and
 Whole-area intervals are nominal 80%: 13 of 18 test months fell inside. Regional intervals covered 67% of test months. For values before 2012, the interval reflects month-to-month scatter in 2018–2019 only; it does not include any long-term change in the Aqua–VIIRS relation.
 
 ## Unusual months
-A month is flagged as above or below its historical reference range when it falls outside the 10th–90th percentile of the same calendar month in other years. This range is descriptive: it is not a prediction or a significance test.
+A month is flagged as above or below its historical reference range when it falls outside the 10th–90th percentile of the same calendar month in other years. This range is descriptive: it is not a prediction or a significance test. Provisional months are never shown or counted as confirmed months above or below the range; where one lies outside it, that is stated as provisional.
 
 ## Limitations
 - **Small areas.** The improvement is for regional and whole-area totals. For single 0.25° cells the scaled record was no closer to S-NPP than raw Aqua. No minimum area size is validated.

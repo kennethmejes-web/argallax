@@ -47,3 +47,8 @@ This changes the scoring rule in the preregistration, which the locked project d
 - The band is labeled **"historical reference range"**. It is descriptive: not a prediction interval and not a significance test.
 - Historical variability is shown separately from sensor-conversion uncertainty (the Aqua-era interval). Interval coverage is not presented as validated for arbitrary selected boxes.
 - Set before the app displayed any flag.
+
+## 2026-11-15 — Provisional months are not flagged as unusual (decided by Kenneth Mejes)
+
+- Provisional months (near-real-time data, Aug 2026 onward) are still compared with the historical reference range, but they are not marked or counted as months above or below it. Where one lies outside the range, the app says so with the qualification "provisional, not confirmed".
+- **Reason:** provisional data have an unverified source type, may include non-vegetation heat sources, and come from NOAA-20, which reads higher than S-NPP in June–January. An unqualified flag would claim more than the data support. This is a display rule; no calculation, range or frozen result changes.
