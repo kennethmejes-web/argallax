@@ -10,7 +10,7 @@ ARGALLAX is a NASA Space Apps Challenge 2026 project: a monthly hotspot calendar
 
 ARGALLAX was created by Kenneth Mejes for Project Sidequest, a solo entry in NASA Space Apps Challenge 2026. Development was AI-assisted, with the project direction, scientific decisions, and final accountability held by the creator.
 
-AI tools used: Claude (Anthropic); ChatGPT and Codex (OpenAI).
+AI tools used: Claude and Claude Code (Anthropic); ChatGPT and Codex (OpenAI).
 
 Some frozen documents mention internal planning files that are not part of this public release.
 

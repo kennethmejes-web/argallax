@@ -2275,7 +2275,7 @@
  "credits": {
   "data": "NASA FIRMS: MODIS Collection 6.1 (Aqua) and VIIRS 375 m (S-NPP, NOAA-20) active fire products; recent months from LANCE FIRMS near-real-time data.",
   "citation_url": "https://www.earthdata.nasa.gov/data/tools/firms",
-  "ai": "ARGALLAX was created by Kenneth Mejes for Project Sidequest, a solo entry in NASA Space Apps Challenge 2026. Development was AI-assisted, with the project direction, scientific decisions, and final accountability held by the creator. AI tools used: Claude (Anthropic); ChatGPT and Codex (OpenAI).",
+  "ai": "ARGALLAX was created by Kenneth Mejes for Project Sidequest, a solo entry in NASA Space Apps Challenge 2026. Development was AI-assisted, with the project direction, scientific decisions, and final accountability held by the creator. AI tools used: Claude and Claude Code (Anthropic); ChatGPT and Codex (OpenAI).",
   "licence": "Apache-2.0"
  },
  "files": {

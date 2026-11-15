@@ -6,7 +6,9 @@
     "prebuild": "node scripts/make-land.mjs && cp node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs public/",
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predev": "node scripts/make-land.mjs && cp node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs public/",
+    "prepreview": "node scripts/make-land.mjs && cp node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs public/"
   },
   "keywords": [],
   "author": "",
@@ -19,8 +21,12 @@
     "vite": "^8.3.8"
   },
   "dependencies": {
+    "@fontsource/atkinson-hyperlegible-mono": "^5.3.0",
+    "@fontsource/atkinson-hyperlegible-next": "^5.3.0",
+    "@fontsource/fraunces": "^5.3.0",
     "@fontsource/ibm-plex-mono": "^5.3.0",
     "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.1",
     "d3-scale-chromatic": "^3.1.1",
     "maplibre-gl": "^6.18.0",
     "topojson-client": "^3.1.0",

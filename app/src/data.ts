@@ -81,6 +81,16 @@ export class Atlas {
     return t;
   }
 
+  /** Aqua daytime cell-days converted to the S-NPP scale for any month. For side-by-side display only. */
+  aquaScaled(mi: number, mask: Uint8Array) { return this.sum(0, 0, mi, mask, true, false); }
+  /** Adds each cell's daytime cell-days for month mi, as recorded by that month's main-series satellite (not harmonized). */
+  addCellMonth(mi: number, out: Float32Array) {
+    const era = this.meta.eras[mi], s = { aqua: 0, snpp: 1, noaa20: 2 }[era.sensor];
+    const idx = this.bySD.get(s * 2)?.[mi]; if (!idx) return;
+    const R = this.cells.rows;
+    for (const k of idx) out[R.c[k]] += era.complete ? R.v[k] + R.u[k] : R.ev[k] + R.eu[k];
+  }
+
   series(mask: Uint8Array, scope: Scope): MonthPoint[] {
     const M = this.meta, months = this.cells.months, cur = M.current_month;
     const sIdx = { aqua: 0, snpp: 1, noaa20: 2 } as const;
